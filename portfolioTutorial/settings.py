@@ -74,11 +74,15 @@ WSGI_APPLICATION = 'portfolioTutorial.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
+# LINK TO THE postgresql
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfoliodb',
+        'USER': 'postgres',
+        'PASSWORD': 'test1234',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
